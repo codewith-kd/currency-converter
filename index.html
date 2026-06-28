@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currancy convertor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <div class="header">
+        <h1>Currancy Converter</h1>
+      </div>
+      <div class="amount-saction">
+        <p>Enter Amount</p>
+        <input type="text" value="1" class="input" />
+      </div>
+
+      <div class="container">
+        <div class="select-container">
+          <div name="from">
+            <p>form</p>
+            <img src="https://flagsapi.com/US/flat/64.png" />
+            <select class="option1" name="from">
+             
+            </select>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="select-container">
+          <div name="To">
+            <p>To</p>
+            <img src="https://flagsapi.com/IN/flat/64.png" />
+            <select class="option2" name="to">
+              
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="msg">
+        1  USD = 100 INR
+      </div>
+      <div class="btn">
+        <button>Get Excange Rate</button>
+      </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+  </body>
+</html>
